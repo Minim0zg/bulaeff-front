@@ -33,7 +33,7 @@ header {
     grid-template-columns: 1fr auto 1fr;
     align-items: center;
     padding: 1.2rem 0px;
-    width: 90vw;
+    width: 98vw;
     margin: 0 auto;
 }
 
