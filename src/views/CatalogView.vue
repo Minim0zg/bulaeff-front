@@ -1,7 +1,8 @@
 <script setup lang="ts">
-import Header from '../components/Header.vue';
-import ProductCard from '../components/ProductCard.vue';
-import SortMenu from '../components/SortMenu.vue';
+import Header from '../components/common/Header.vue'
+import ProductCard from '../components/common/ProductCard.vue'
+import SortMenu from '../components/catalog-page/SortMenu.vue'
+import productImage from '../assets/images/product-id01.png'
 
 const products = [
     {
@@ -9,56 +10,56 @@ const products = [
         brand: 'Stone Island',
         name: 'Мужская куртка',
         price: 400,
-        image: '/src/assets/images/product-id01.png'
+        image: productImage,
     },
     {
         id: 2,
         brand: 'Gucci',
         name: 'Женский топ',
         price: 600,
-        image: '/src/assets/images/product-id01.png'
+        image: productImage,
     },
     {
         id: 3,
         brand: 'Prada',
         name: 'Сумка',
         price: 1200,
-        image: '/src/assets/images/product-id01.png'
+        image: productImage,
     },
     {
         id: 4,
         brand: 'Bottega Veneta',
         name: 'Кожаная сумка',
         price: 1500,
-        image: '/src/assets/images/product-id01.png'
+        image: productImage,
     },
     {
         id: 5,
         brand: 'Stone Island',
         name: 'Мужская куртка',
         price: 400,
-        image: '/src/assets/images/product-id01.png'
+        image: productImage,
     },
     {
         id: 6,
         brand: 'Gucci',
         name: 'Женский топ',
         price: 600,
-        image: '/src/assets/images/product-id01.png'
+        image: productImage,
     },
     {
         id: 7,
         brand: 'Prada',
         name: 'Сумка',
         price: 1000,
-        image: '/src/assets/images/product-id01.png'
+        image: productImage,
     },
     {
         id: 8,
         brand: 'Bottega Veneta',
         name: 'Кожаная сумка',
         price: 1500,
-        image: '/src/assets/images/product-id01.png'
+        image: productImage,
     },
 ]
 </script>
@@ -67,19 +68,12 @@ const products = [
     <Header />
     <main class="catalog">
         <div class="catalog-head">
-            <h2 class="catalog-title">
-                Новинки
-            </h2>
-            <SortMenu/>
+            <h2 class="catalog-title">Новинки</h2>
+            <SortMenu />
         </div>
         <div class="product-grid">
-            <ProductCard
-            v-for="product in products"
-            :key="product.id"
-            :product="product"
-            />
+            <ProductCard v-for="product in products" :key="product.id" :product="product" />
         </div>
-
     </main>
 </template>
 
@@ -92,7 +86,6 @@ const products = [
     display: flex;
     align-items: center;
     justify-content: space-between;
-
 }
 .catalog-title {
     margin-bottom: 2vw;
@@ -103,6 +96,6 @@ const products = [
 .product-grid {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
-    gap: 1vw
+    gap: 1vw;
 }
 </style>

@@ -1,12 +1,10 @@
 <script setup lang="ts">
-import { RouterLink } from 'vue-router';
-
-
+import { RouterLink } from 'vue-router'
 </script>
 <template>
     <header>
         <div class="logo">
-            <RouterLink to="/"> BULAEFF </RouterLink> 
+            <RouterLink to="/"> BULAEFF </RouterLink>
         </div>
         <nav class="nav">
             <RouterLink to="/catalog">Новинки</RouterLink>
@@ -18,16 +16,15 @@ import { RouterLink } from 'vue-router';
         </nav>
         <div class="search-bag">
             <RouterLink to="/">
-                <img src="../assets/svg/search-icon.svg" alt="Search Icon" />
+                <img src="../../assets/svg/search-icon.svg" alt="Search Icon" />
             </RouterLink>
             <RouterLink to="/">
-                <img src="../assets/svg/bag-icon.svg" alt="Bag Icon" />
+                <img src="../../assets/svg/bag-icon.svg" alt="Bag Icon" />
             </RouterLink>
         </div>
     </header>
 </template>
 <style scoped>
-
 header {
     display: grid;
     grid-template-columns: 1fr auto 1fr;
@@ -37,14 +34,10 @@ header {
     margin: 0 auto;
 }
 
-
 .logo {
     font-size: 1.875rem;
     font-weight: 600;
     display: flex;
-
-
-
 }
 .nav {
     display: flex;
