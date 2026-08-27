@@ -1,8 +1,7 @@
 <script setup lang="ts">
-import Header from '../components/common/Header.vue'
-import ProductCard from '../components/common/ProductCard.vue'
-import SortMenu from '../components/catalog-page/SortMenu.vue'
-import productImage from '../assets/images/product-id01.png'
+import ProductCard from '@/components/common/ProductCard.vue'
+import SortMenu from '@/components/catalog-page/SortMenu.vue'
+import productImage from '@/assets/images/product-id01.png'
 
 const products = [
     {
@@ -65,7 +64,6 @@ const products = [
 </script>
 
 <template>
-    <Header />
     <main class="catalog">
         <div class="catalog-head">
             <h2 class="catalog-title">Новинки</h2>

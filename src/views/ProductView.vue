@@ -1,10 +1,6 @@
-<script setup lang="ts">
-import Header from '../components/common/Header.vue'
-</script>
+<script setup lang="ts"></script>
 
 <template>
-    <Header />
-
     <div class="product-view">
         <div class="product-images">
             <img src="../assets/images/product-id01.png" alt="product" class="product-image" />

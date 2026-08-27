@@ -1,6 +1,6 @@
 <script setup lang="ts">
 interface Props {
-    imageSource: string
+    image: string
     margin?: string
 }
 
@@ -9,7 +9,7 @@ const props = defineProps<Props>()
 
 <template>
     <img
-        :src="props.imageSource"
+        :src="props.image"
         :style="`margin-top: ${props.margin}; margin-bottom: ${props.margin}`"
         alt="Main Page Image"
     />
