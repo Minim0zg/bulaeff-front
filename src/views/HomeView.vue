@@ -56,9 +56,11 @@ const newProducts = [
 
 </template>
 <style scoped>
+
 .page {
     display: grid;
     grid-template-rows: auto minmax(0, 1fr);
     overflow: hidden;
 }
+
 </style>
