@@ -18,7 +18,7 @@ import { RouterLink } from 'vue-router'
             <RouterLink to="/">
                 <img src="../../assets/svg/search-icon.svg" alt="Search Icon" />
             </RouterLink>
-            <RouterLink to="/">
+            <RouterLink to="/cart">
                 <img src="../../assets/svg/bag-icon.svg" alt="Bag Icon" />
             </RouterLink>
         </div>
