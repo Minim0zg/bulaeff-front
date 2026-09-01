@@ -1,6 +1,5 @@
 <script setup lang="ts">
 import { productInfo } from '@/test-db/data.ts'
-import { isTypeQueryNode } from 'typescript'
 import { ref } from 'vue'
 const addedToBag = ref(false)
 const addToBag = () => {
@@ -27,7 +26,9 @@ const addToBag = () => {
             </div>
             <div class="product-description">
                 <div style="font-weight: 500">{{ productInfo.price }}$</div>
-                <button type="button" @click="addToBag()">Добавить в корзину</button>
+                <button class="bag-button" type="button" @click="addToBag()">
+                    Добавить в корзину
+                </button>
                 <div v-if="addedToBag === true">Добавлено в корзину</div>
             </div>
         </div>
@@ -35,7 +36,7 @@ const addToBag = () => {
 </template>
 
 <style>
-button {
+.bag-button {
     background-color: black;
     color: aliceblue;
     width: 15rem;

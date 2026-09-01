@@ -1,39 +1,9 @@
 <script setup lang="ts">
 import MainPageImage from '@/components/home-page/MainPageImage.vue'
 import ProductListMainPage from '@/components/home-page/ProductListMainPage.vue'
-import itemImage from '@/assets/images/product-id01.png'
 import mainImage from '@/assets/images/main-page-image.png'
 import mainImage02 from '@/assets/images/main-page-image02.png'
-const newProducts = [
-    {
-        id: 1,
-        brand: 'Stone Island',
-        name: 'Мужская куртка',
-        price: 400,
-        image: itemImage,
-    },
-    {
-        id: 2,
-        brand: 'Gucci',
-        name: 'Женский топ',
-        price: 600,
-        image: itemImage,
-    },
-    {
-        id: 3,
-        brand: 'Prada',
-        name: 'Сумка',
-        price: 1200,
-        image: itemImage,
-    },
-    {
-        id: 4,
-        brand: 'Bottega Veneta',
-        name: 'Кожаная сумка',
-        price: 1500,
-        image: itemImage,
-    },
-]
+import { newProducts } from '@/test-db/data'
 </script>
 <template>
     <div class="page">

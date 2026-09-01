@@ -1,66 +1,7 @@
 <script setup lang="ts">
 import ProductCard from '@/components/common/ProductCard.vue'
 import SortMenu from '@/components/catalog-page/SortMenu.vue'
-import productImage from '@/assets/images/product-id01.png'
-
-const products = [
-    {
-        id: 1,
-        brand: 'Stone Island',
-        name: 'Мужская куртка',
-        price: 400,
-        image: productImage,
-    },
-    {
-        id: 2,
-        brand: 'Gucci',
-        name: 'Женский топ',
-        price: 600,
-        image: productImage,
-    },
-    {
-        id: 3,
-        brand: 'Prada',
-        name: 'Сумка',
-        price: 1200,
-        image: productImage,
-    },
-    {
-        id: 4,
-        brand: 'Bottega Veneta',
-        name: 'Кожаная сумка',
-        price: 1500,
-        image: productImage,
-    },
-    {
-        id: 5,
-        brand: 'Stone Island',
-        name: 'Мужская куртка',
-        price: 400,
-        image: productImage,
-    },
-    {
-        id: 6,
-        brand: 'Gucci',
-        name: 'Женский топ',
-        price: 600,
-        image: productImage,
-    },
-    {
-        id: 7,
-        brand: 'Prada',
-        name: 'Сумка',
-        price: 1000,
-        image: productImage,
-    },
-    {
-        id: 8,
-        brand: 'Bottega Veneta',
-        name: 'Кожаная сумка',
-        price: 1500,
-        image: productImage,
-    },
-]
+import { products } from '@/test-db/data'
 </script>
 
 <template>
